@@ -192,6 +192,30 @@ main section img {
     grid-column: 8/10;
     grid-row: 2/3;
 }
+.form-button {
+    background-color: #006634; 
+    color: #d9c2a3;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    max-width: 200px; /* You can adjust this value based on your design */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+
+    border: 1px solid #ddd;
+
+    grid-row: 11/12;
+    
+}
+
+.form-button:hover {
+    background-color: #11C23B; 
+    color: #094576;
+    font-size: 30px;
+}
 
 
 .mountains {
@@ -202,15 +226,86 @@ main section img {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
+.Faq {
+    background-color: #f0f0f0; 
+    display: grid;
+    grid-template-rows: repeat(12,auto); /* Adjust the width of the columns as needed */
+    
+    /*gap: 20px; /* Adjust the gap between items */
+}
+.faq-title {
+    font-family: "Caveat","Bradley Hand", sans-serif;
+    color: #094576;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1/2;
+}
+.msg-title {
+    font-family: "Caveat","Bradley Hand", sans-serif;
+    color: #094576;
+    
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 9/10;
+}
+#faq-description {
+    color: #094576;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 2/3;
+}
 
+.faq-item {
+    background-color: #59DBF3; 
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+}
 
+.question-container {
+    color: #094576;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Space between question and toggle */
+}
 
+.question {
+    margin: 0;
+    flex: 1; /* Allow question to take remaining space */
+}
+
+.toggle {
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    user-select: none;
+}
 
 .card-img:hover {
-    opacity: .6;
+    opacity: 0.6;
     transform: scale(1.1);
 }
 
+.answer {
+    color: #094576;
+    display: none;
+    width: 100%; /* Take full width */
+}
+
+.answer.show {
+    display: block;
+}
 
 
 @media screen and (max-width: 900px) {
