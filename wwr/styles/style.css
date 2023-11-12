@@ -227,7 +227,7 @@ main section img {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.Faq {
+.faq {
     background-color: #f0f0f0; 
     display: grid;
     grid-template-rows: repeat(12,auto); /* Adjust the width of the columns as needed */
