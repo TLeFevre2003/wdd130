@@ -78,12 +78,14 @@ header {
     text-align: left;
     font-family: "Roboto Slab", Helvetica, sans-serif;
     text-indent: 40px; /* Adjust the value as needed */
+    color: #44536B;
     
 }
 .section h2{
     font-size: 2em;
     text-align: center;
     font-family: "Overpass";
+    color: #44536B;
 }
 #hero-msg{
     grid-column: 2/3;
@@ -120,7 +122,7 @@ header {
     
 }
 #home {
-    background-color: #FFD8CC;
+    background-color: #f3f7fe;
 }
 
 .project-photo {
