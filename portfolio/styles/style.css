@@ -54,7 +54,7 @@ header {
     grid-template-columns: 150px auto;
 }
 #hero-img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 #hero-msg {
@@ -109,6 +109,7 @@ header {
     display: grid;
     grid-template-rows: repeat(7,auto); /* Adjust the width of the columns as needed */
     
+    
 }
 
 .section {
@@ -121,6 +122,7 @@ header {
     align-items: center;
     
 }
+
 #home {
     background-color: #f3f7fe;
 }
@@ -188,3 +190,34 @@ footer a:hover {
 }
 
 
+.about-me-section {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: left;
+    
+}
+.about-me-section p{
+    text-align: left;
+    font-family: "Roboto Slab", Helvetica, sans-serif;
+    text-indent: 0px; /* Adjust the value as needed */
+    color: #44536B;
+    
+}
+.about-me-section h3{
+    text-align: left;
+    font-size: 2em;
+    font-family: "Overpass";
+    color: #44536B;
+}
+.about-me-section a {
+    color: #44536B;
+    text-decoration: none;
+    transition: font-size 0.3s ease; 
+}
+.about-me-section a:hover {
+    font-size: 1.3em;
+}
