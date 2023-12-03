@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Roboto&family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Roboto&display=swap');
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto Slab", Helvetica, sans-serif;
 }
 
 #content {
@@ -28,9 +27,9 @@ nav a {
     background-color: #94BAFF;
     color: #44536B;
     text-decoration: none;
-    font-family: Roboto Slab, Helvetica, sans-serif;
-    padding: 15px 60px; /* Adjust padding as needed */
-    border-radius: 30px; /* Adjust the border-radius to make it oval */
+    font-family: "Roboto Slab", Helvetica, sans-serif;
+    padding: .55em 2em; /* Adjust padding as needed */
+    border-radius: 1em; /* Adjust the border-radius to make it oval */
     transition: transform 0.3s ease; 
     
 }
@@ -45,7 +44,7 @@ nav a:hover {
 }
 
 .logo {
-    width: 80px;
+    width: 50%;
 }
 
 header {
@@ -158,7 +157,7 @@ header {
 
 footer {
     text-align: left;
-    background-color: #59DBF3;
+    background-color: #94BAFF;
     color: black;
     padding-left: 10px;
     padding-top: 50px;
@@ -220,4 +219,13 @@ footer a:hover {
 }
 .about-me-section a:hover {
     font-size: 1.3em;
+}
+
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    nav a {
+        padding: 1em 3em; /* Adjust padding for mobile */
+        border-radius: 1em; /* Adjust border-radius for mobile */
+    }
 }
