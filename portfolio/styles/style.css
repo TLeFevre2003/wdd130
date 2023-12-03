@@ -53,8 +53,18 @@ header {
     grid-template-columns: 150px auto;
 }
 #hero-img {
-    width: 100%;
+    width: 75%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hero-img-about-me {
+    max-width: 50%; /* Adjust the value as needed */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #hero-msg {
     text-align: center;
@@ -92,6 +102,8 @@ header {
     margin-top: 100px;
     font-family: Overpass;
 }
+
+
 
 
 
@@ -222,10 +234,32 @@ footer a:hover {
 }
 
 
-/* Media Query for Mobile Devices */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
     nav a {
-        padding: 1em 3em; /* Adjust padding for mobile */
-        border-radius: 1em; /* Adjust border-radius for mobile */
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    #background {
+        display: none;
+    }
+    footer {
+        margin-top: 25px;
     }
 }
