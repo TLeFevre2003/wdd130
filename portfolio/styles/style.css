@@ -205,34 +205,40 @@ footer a:hover {
 .about-me-section {
     padding: 10px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
 
     display: flex;
-    flex-direction: column; /* Change to column layout */
+    flex-direction: column;
     align-items: left;
-    
 }
-.about-me-section p{
+
+.about-me-section p {
     text-align: left;
     font-family: "Roboto Slab", Helvetica, sans-serif;
-    text-indent: 0px; /* Adjust the value as needed */
+    text-indent: 0px;
     color: #44536B;
-    
+    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
 }
-.about-me-section h3{
+
+.about-me-section h3 {
     text-align: left;
     font-size: 2em;
     font-family: "Overpass";
     color: #44536B;
+    margin-bottom: 5px; /* Adjust the margin-bottom as needed */
 }
+
 .about-me-section a {
     color: #44536B;
     text-decoration: none;
-    transition: font-size 0.3s ease; 
+    transition: font-size 0.3s ease;
 }
+
 .about-me-section a:hover {
     font-size: 1.3em;
 }
+
+
 
 
 @media screen and (max-width: 900px) {
