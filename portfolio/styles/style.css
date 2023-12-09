@@ -8,6 +8,7 @@ body {
 #content {
     max-width: 1600px;
     margin: 0 auto;
+    
 }
 
 nav {
@@ -239,6 +240,51 @@ footer a:hover {
 .about-me-section a:hover {
     font-size: 1.3em;
 }
+#title {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Overpass";
+}
+#projects{
+    background-color: #f3f7fe;
+}
+.project h2{
+    font-size: 2em;
+    font-family: "Overpass";
+    text-align: center;
+}
+.project-photo {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project p{
+    text-indent: 40px; /* Adjust the value as needed */
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1em;
+    font-family: "Roboto Slab", Helvetica, sans-serif;
+}
+.project .tech {
+    text-indent: 0; 
+    font-size: 1em; 
+}
+.video-container {
+    width: 75%;
+    margin: 0 auto;
+  }
+  
+  .project-video {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+  }
+  
+  
+
+
+
 
 
 

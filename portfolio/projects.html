@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>My Projects</title>
 </head>
 <body>
@@ -17,10 +18,11 @@
                 <a href="aboutme.html">About Me</a>
             </nav>
         </header>
-        <div id = "title">
-            <h1>Projects</h1>
-        </div>
+
         <main id = "projects">
+            <div id = "title">
+                <h1>Projects</h1>
+            </div>
             <div class = "project">
                 <h2>Disease Spread Simulator 1.0</h2>
                 <img class="project-photo" src="images/Disease_spread_sim_1.0.png" alt="Disease Spread Sim 1.0">
@@ -29,14 +31,16 @@
                     The program uses a graphical interface to display the simulation, allowing users to visualize how different parameters affect the spread of the disease.
                 </p>
                 <h2>Video Demonstration</h2>
-                <iframe class = "project video" width="560" height="315" src="https://www.youtube.com/embed/lCbj1ugUJgo?si=rNXMkf4wbcUZ7Red" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-container">
+                    <iframe class="project-video" src="https://www.youtube.com/embed/lCbj1ugUJgo?si=rNXMkf4wbcUZ7Red" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
                 <h2>Goal of The Project</h2>
                 <p>The goal of this project is to create a visual simulation of disease spread within a defined population.
                     Users can set various parameters such as death rate, spread rate, and population size to observe how these factors influence the progression of the disease. </p>
                 <h2>Technologies Used</h2>
-                <p>Python: The simulation is implemented in Python programming language.
-                    kinter: The graphical user interface is created using the Tkinter library.
-                    Math Library: Mathematical calculations and formulas are performed using the math library.
+                <p class = "tech">Python: The simulation is implemented in Python programming language.<br/>
+                    Tkinter: The graphical user interface is created using the Tkinter library.<br/>
+                    Math Library: Mathematical calculations and formulas are performed using the math library.<br/>
                     Random Library: Random numbers are generated using the random library.</p>
             </div>
             <main id = "projects">
@@ -48,17 +52,19 @@
                         It also uses a graphical interface and has more parameters than the previous version.
                     </p>
                     <h2>Video Demonstration</h2>
-                    <iframe class = "project video" width="560" height="315" src="https://www.youtube.com/embed/kDmT0Hq8zQo?si=3SqNiPdu7wCBMrLL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="video-container">
+                        <iframe class = "project-video" src="https://www.youtube.com/embed/kDmT0Hq8zQo?si=3SqNiPdu7wCBMrLL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <h2>Goal of The Project</h2>
+                    </div>
                     <p>While my first version of a disease spread simulation met my original goals, I still wasn't happy when it was completed.
                         My two biggest issues were performance and it took a long time to display the chart at the end. I wanted to increase porformance
                         by at least 10x and I did that.
                     </p>
                     <h2>Technologies Used</h2>
-                    <p>Python: The simulation is implemented in Python programming language.
-                       Pygame: The graphics are created in the pygame module.
-                       Matplotlib: The chart drawn at the end of the simulation was implemented using Matplotlib.
-                       Math Library: Mathematical calculations and formulas are performed using the math library.
+                    <p class = "tech">Python: The simulation is implemented in Python programming language.<br/>
+                       Pygame: The graphics are created in the pygame module.<br/>
+                       Matplotlib: The chart drawn at the end of the simulation was implemented using Matplotlib.<br/>
+                       Math Library: Mathematical calculations and formulas are performed using the math library.<br/>
                        Random Library: Random numbers are generated using the random library.
 
                     </p>
@@ -74,19 +80,21 @@
                             can communicate to a local hosted web page and allow you to use javascript canvas syntax in python to draw to the canvas.
                         </p>
                         <h2>Video Demonstration</h2>
-                        <iframe class = "project video" width="560" height="315" src="https://www.youtube.com/embed/pnV2-eE1L0c?si=apthuztPlDh6GYMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="video-container">
+                            <iframe class = "project-video" src="https://www.youtube.com/embed/pnV2-eE1L0c?si=apthuztPlDh6GYMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
                         <h2>Goal of The Project</h2>
                         <p>The goal of this project was to make it easy to make a graphical program using python, but with javascript canvas syntax.
                             The goals were to make it have the exact same syntax, and to work on Mac, Windows and Linux. That was important because
                             while I have learned programming I have often run accross frameworks, libraries or engines that are platform exclusive.
                         </p>
                         <h2>Technologies Used</h2>
-                        <p>
-                            Python: Python is the language the backend is programmed in.
-                            Html,css,javascript: The web page is made with these standard web languages.
-                            Websockets: Websockets is a python module that allows the python send information to the web page.
-                            Multiprocessing: This python module allows you to run multiple python scripts at once.
-                            Asyncio: This module provides support for writing asynchronous code. It allows functions to be run whenever events are sent from the web page.
+                        <p class = "tech">
+                            Python: Python is the language the backend is programmed in.<br/>
+                            Html,css,javascript: The web page is made with these standard web languages.<br/>
+                            Websockets: Websockets is a python module that allows the python send information to the web page.<br/>
+                            Multiprocessing: This python module allows you to run multiple python scripts at once.<br/>
+                            Asyncio: This module provides support for writing asynchronous code. It allows functions to be run whenever events are sent from the web page.<br/>
                             Json: The json module allows encoding and decoding json data. Json holds the commands that is sent to the webpage and the events that are sent back.
                         </p>
                     </div>
@@ -101,7 +109,7 @@
                     <img src="images/Github_icon.png" alt="github icon">
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank">
-                    <img src="images/linkedin_icon .png" alt="linkedin icon">
+                    <img src="images/linked-icon.png" alt="linkedin icon">
                 </a>
             </div>
         </footer>
