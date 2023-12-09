@@ -253,6 +253,11 @@ footer a:hover {
     font-family: "Overpass";
     text-align: center;
 }
+.project h3{
+    font-size: 2em;
+    font-family: "Overpass";
+    text-align: center;
+}
 .project-photo {
     width: 75%;
     height: auto;
